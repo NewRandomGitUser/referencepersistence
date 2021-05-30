@@ -34,14 +34,4 @@ public class PersonCountryAttributor {
         attributeCountryWithIdToPersonWithId(2L,6L);
         attributeCountryWithIdToPersonWithId(1L,7L);
     }
-
-
-
-
-
-
-
-
-
-
 }

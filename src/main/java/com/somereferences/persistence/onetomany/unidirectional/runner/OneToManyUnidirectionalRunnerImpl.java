@@ -17,12 +17,13 @@ public class OneToManyUnidirectionalRunnerImpl implements OneToManyUnidirectiona
     }
 
     public void execute(){
-//      applicationPopulator.execute();
-        queryExecutor.paginationQueryExecutor()
-                     .printFindLessThanAttributeThreePageSizeValue(0,2,20000);
-        queryExecutor.simpleQueryExecutor()
-                     .printFindUsingAttributeOneOrAttributeTwo("Mary","Park");
-        queryExecutor.projectionQueryExecutor()
-                     .printGetAllAttributeTwoAttributeThree();
+        applicationPopulator.execute();
+
+//        queryExecutor.paginationQueryExecutor()
+//                     .printFindLessThanAttributeThreePageSizeValue(0,2,20000);
+//        queryExecutor.simpleQueryExecutor()
+//                     .printFindUsingAttributeOneOrAttributeTwo("Mary","Park");
+//        queryExecutor.projectionQueryExecutor()
+//                     .printGetAllAttributeTwoAttributeThree();
     }
 }

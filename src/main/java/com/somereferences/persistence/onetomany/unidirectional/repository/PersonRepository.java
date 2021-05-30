@@ -55,7 +55,7 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 
     //using class based projection
 
-    @Query("SELECT new com.somereferences.persistence.onetomany.unidirectional.models.projection.PersonDto (p.attributeTwo, p.attributeThree) FROM Person p")
+    @Query("SELECT new com.somereferences.persistence.onetomany.unidirectional.models.projectiondto.PersonDto (p.attributeTwo, p.attributeThree) FROM Person p")
     List<PersonDto> getAllAttributeTwoAttributeThree();
 
     //using interface based projection
